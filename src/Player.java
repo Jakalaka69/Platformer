@@ -99,7 +99,7 @@ public class Player {
                 return 2;
             }
         }
-
+        System.out.println("asdasd");
         x += xspeed;
         y += yspeed;
 
