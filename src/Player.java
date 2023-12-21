@@ -55,7 +55,7 @@ public class Player {
         }
 
 
-        if(hitBox.y < 250){
+        if(hitBox.y < 200){
             System.out.println(currentTime + "" +  hitBox.y);
             started = false;
             return 1;
@@ -99,7 +99,7 @@ public class Player {
                 return 2;
             }
         }
-        System.out.println("asdasd");
+
         x += xspeed;
         y += yspeed;
 

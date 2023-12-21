@@ -6,11 +6,12 @@ import java.awt.event.WindowEvent;
 
 
 public class Platformer extends WindowAdapter {
-        static MainFrame frame;
+    static MainFrame frame = new MainFrame();
 
     public static void windowClosing(MainFrame f) {
         f.dispose();
     }
+
 
     //    public static void main(String[] args){
 //
@@ -36,7 +37,7 @@ public class Platformer extends WindowAdapter {
 
 
             MainFrame oldFrame = frame;
-            frame = new MainFrame();
+
 
             frame.setSize(700, 700);
 
@@ -49,11 +50,11 @@ public class Platformer extends WindowAdapter {
             frame.setVisible(true);
 
             frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-            try {
-                windowClosing(oldFrame);
-            }catch(NullPointerException e){
-
-        }
+//            try {
+//                windowClosing(oldFrame);
+//            }catch(NullPointerException e){
+//
+//        }
     };
 
     public static void main(String[] args) {
